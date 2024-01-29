@@ -21,6 +21,7 @@ function App() {
       <TechSkills />
       <Contact />
       <Footer />
+      <button className="btn btn-primary">Button</button>
     </>
   );
 }
