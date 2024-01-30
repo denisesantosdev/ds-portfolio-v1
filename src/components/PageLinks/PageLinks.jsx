@@ -8,7 +8,7 @@ const PageLinks = () => {
       {links.map((link) => {
         return (
           <li
-            className="sm:inline-block m-2"
+            className="md:inline-block m-9 md:m-2 hover:text-primary"
             key={link}>
             <a href={`#${link}`}>{link}</a>
           </li>
