@@ -26,9 +26,7 @@ const Header = () => {
 
       <nav
         className={
-          isMenuHidden
-            ? "hidden md:block"
-            : "bg-base-100 absolute top-0 right-0 w-[70%] md:w-fit h-full md:static z-20 shadow-2xl"
+          isMenuHidden ? "mobile-menu" : "mobile-menu slide-in bg-base-100"
         }>
         <div className="md:flex md:gap-5 pt-20 md:pt-0 text-center md:place-items-center">
           <PageLinks />
@@ -38,9 +36,7 @@ const Header = () => {
 
       <div
         className={
-          isMenuHidden
-            ? "hidden"
-            : "absolute inset-0 bg-base-300 opacity-75 md:hidden"
+          isMenuHidden ? "overlay md:hidden" : "overlay fade-in bg-base-300"
         }></div>
     </header>
   );
