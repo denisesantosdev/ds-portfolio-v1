@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { SocialMediaLinks, PageLinks } from "../components/components-index.js";
 
+import ToggleMenuBtn from "../components/ToggleMenuBtn/ToggleMenuBtn.jsx";
+
 import { FaBars, FaXmark } from "react-icons/fa6";
 
 const Header = () => {
@@ -14,15 +16,7 @@ const Header = () => {
         {"<DS/>"}
       </a>
 
-      <label className="btn btn-circle swap swap-rotate relative z-30 md:hidden hover:text-primary">
-        <input
-          type="checkbox"
-          onChange={() => setIsMenuHidden((prev) => !prev)}
-        />
-
-        <FaBars className="swap-off fill-current text-2xl" />
-        <FaXmark className="swap-on fill-current text-2xl" />
-      </label>
+      <ToggleMenuBtn setIsMenuHidden={setIsMenuHidden}/>
 
       <nav
         className={
