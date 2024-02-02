@@ -1,12 +1,14 @@
 import React from "react";
 import { SocialMediaLinks, PageLinks } from "../components-index.js";
 
+import "./Menu.css"
+
 const Menu = ({ isMenuHidden }) => {
   return (
     <>
       <nav
         className={
-          isMenuHidden ? "mobile-menu" : "mobile-menu slide-in bg-base-100"
+          isMenuHidden ? "mobile-menu md:block" : "mobile-menu slide-in bg-base-100"
         }>
         <div className="md:flex md:gap-5 pt-20 md:pt-0 text-center md:place-items-center">
           <PageLinks />

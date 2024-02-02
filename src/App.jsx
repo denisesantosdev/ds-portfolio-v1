@@ -8,14 +8,18 @@ import {
   FeaturedProjects,
   TechSkills,
   Footer,
-  Contact
+  Contact,
 } from "./containers/containers-index.js";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <div className="max-w-screen-lg m-auto">
+        <Header />
+      </div>
+      <div  className="max-w-screen-lg m-auto">
+        <Hero />
+      </div>
       <About />
       <FeaturedProjects />
       <TechSkills />
