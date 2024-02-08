@@ -28,6 +28,7 @@ const FeaturedProjects = () => {
             <TechBadge
               toolTip="Linguagem de programação"
               text="Javascript"
+              badgeStyle="badge-neutral"
             />
           </ul>
           
