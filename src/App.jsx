@@ -14,18 +14,17 @@ import {
 function App() {
   return (
     <>
-      <div className="max-w-screen-lg m-auto">
+      <div className="">
         <Header />
       </div>
-      <div  className="max-w-screen-lg m-auto">
+      <div className="px-14">
         <Hero />
+        <About />
+        <FeaturedProjects />
+        <TechSkills />
+        <Contact />
       </div>
-      <About />
-      <FeaturedProjects />
-      <TechSkills />
-      <Contact />
       <Footer />
-      <button className="btn btn-primary">Button</button>
     </>
   );
 }

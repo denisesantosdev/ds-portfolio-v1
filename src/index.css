@@ -2,10 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-/*   * {
+/*    * {
   outline: 1px solid red;
-}   */
-
+}   
+ */
 body {
+  overflow-x: hidden
+}
+
+.text-decoration:before {
+  position: absolute;
+  content: '/*';
+  inset: 0;
+  top: -50px;
+  left: 10px;
+  font-size: 1.5rem;
+  opacity: .40;
+  color: inherit;
+}
+
+.text-decoration:after {
+  position: absolute;
+  content: '*/';
+  left: 10px;
+  bottom: -50px;
+  font-size: 1.5rem;
+  opacity: .40;
+  color: inherit;
+}
+
+.lock-scroll {
   overflow: hidden;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "../../data/icons.jsx";
 
 const SocialMediaLinks = () => {
   const socialMediaLinks = [
