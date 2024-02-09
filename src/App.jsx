@@ -14,10 +14,10 @@ import {
 function App() {
   return (
     <>
-      <div className="">
+      <div className="mb-16">
         <Header />
       </div>
-      <div className="px-14">
+      <div className="px-14 grid gap-32 mb-32">
         <Hero />
         <About />
         <FeaturedProjects />

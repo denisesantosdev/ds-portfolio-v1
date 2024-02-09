@@ -24,19 +24,49 @@ const FeaturedProjects = () => {
         />
 
         <div className="grid gap-7">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            neque voluptate maiores consequatur totam ea, voluptas dolorum eos
+            sint ab?
+          </p>
+          
           <ul className="inline-flex gap-5 flex-wrap">
             <TechBadge
               toolTip="Linguagem de programação"
               text="Javascript"
               badgeStyle="badge-neutral"
             />
+            <TechBadge
+              toolTip="Linguagem de programação"
+              text="Javascript"
+              badgeStyle="badge-neutral"
+            />
+            <TechBadge
+              toolTip="Linguagem de programação"
+              text="Javascript"
+              badgeStyle="badge-neutral"
+            />
+            <TechBadge
+              toolTip="Linguagem de programação"
+              text="Javascript"
+              badgeStyle="badge-neutral"
+            />
+            <TechBadge
+              toolTip="Linguagem de programação"
+              text="Javascript"
+              badgeStyle="badge-neutral"
+            />
+            <TechBadge
+              toolTip="Linguagem de programação"
+              text="Javascript"
+              badgeStyle="badge-neutral"
+            />
+            <TechBadge
+              toolTip="Linguagem de programação"
+              text="Javascript"
+              badgeStyle="badge-neutral"
+            />
           </ul>
-          
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            neque voluptate maiores consequatur totam ea, voluptas dolorum eos
-            sint ab?
-          </p>
 
           <div className="flex gap-5 justify-center">
             <BtnPrimary

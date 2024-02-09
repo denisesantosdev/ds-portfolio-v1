@@ -6,7 +6,6 @@ const TechSkills = () => {
   return (
     <section>
       <SectionTitle text='Tecnologias'/>
-      <p className='mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, maxime.</p>
 
       <ul className='grid grid-cols-4 gap-9 place-items-center'>
         <TechBadge 
