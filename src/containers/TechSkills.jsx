@@ -5,9 +5,8 @@ import { FaCss3Alt } from 'react-icons/fa6'
 const TechSkills = () => {
   return (
     <section>
-      <SectionTitle text='Tecnologias'/>
-
-      <ul className='grid grid-cols-4 gap-9 place-items-center'>
+      <SectionTitle text='Tecnologias' subtitleText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, fugit?"/>
+      <ul className='grid grid-cols-4 gap-9 place-items-center max-w-lg m-auto'>
         <TechBadge 
         text="CSS"
         icon={<FaCss3Alt size={50} />} toolTip="Linguagem de estilização"/>

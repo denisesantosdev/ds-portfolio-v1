@@ -16,21 +16,24 @@ const FeaturedProjects = () => {
         <h4 className="text-2xl mb-7">_github-account-overview</h4>
       </header>
 
-      <main>
+      <main className="sm:grid md:grid-cols-[2fr,1fr] relative md:mb-20">
         <img
-          className="mb-7 rounded-md"
+          className="mb-7 rounded-md sm:justify-self-center"
           src="https://placehold.it/560x350"
           alt=""
         />
 
-        <div className="grid gap-7">
-        <p>
+        <div className="grid gap-7 md:absolute right-0 top-20 md:w-[500px] md:justify-items-end">
+        <p className="md:bg-neutral md:p-5 md:rounded-md md:bg-opacity-60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            neque voluptate maiores consequatur totam ea, voluptas dolorum eos
+            sint ab?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             neque voluptate maiores consequatur totam ea, voluptas dolorum eos
             sint ab?
           </p>
-          
-          <ul className="inline-flex gap-5 flex-wrap">
+
+          <ul className="inline-flex gap-4 flex-wrap md:order-[-1] md:justify-end">
             <TechBadge
               toolTip="Linguagem de programação"
               text="Javascript"

@@ -14,17 +14,21 @@ import {
 function App() {
   return (
     <>
-      <div className="mb-16">
+      <div className="mb-16 max-w-screen-xl m-auto">
         <Header />
       </div>
-      <div className="px-14 grid gap-32 mb-32">
+      <div className="mb-32 max-w-screen-xl m-auto px-14">
         <Hero />
+      </div>
+      <div className="px-14 grid gap-32 mb-32 max-w-screen-lg m-auto">
         <About />
         <FeaturedProjects />
         <TechSkills />
         <Contact />
       </div>
-      <Footer />
+      <div className="max-w-screen-xl m-auto">
+        <Footer />
+      </div>
     </>
   );
 }
