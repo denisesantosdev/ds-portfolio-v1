@@ -68,7 +68,7 @@ const Contact = () => {
           <input
             type="button"
             value="Enviar"
-            className="btn btn-primary justify-self-center"
+            className="btn btn-primary btn-outline justify-self-center"
           />
         </form>
       </div>

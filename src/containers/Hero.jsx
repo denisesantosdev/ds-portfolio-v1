@@ -3,7 +3,7 @@ import { BtnPrimary, BtnSecondary } from "../components/components-index";
 
 const Hero = () => {
   return (
-    <section className="hero min-h-[80vh] bg-base-100">
+    <section className="hero min-h-[70vh] bg-base-100">
       <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-16 p-0">
         <img
           src="https://placehold.it/300x300"
@@ -12,13 +12,13 @@ const Hero = () => {
         />
         <div>
           <p className="text-primary mb-2">Olá mundo! Meu nome é</p>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 font-heading">
             Denise Santos
           </h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold ">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading opacity-65">
             Desenvolvevora <nobr>front-end</nobr>
           </h2>
-          <p className="py-9 md:max-w-[500px]">
+          <p className="py-9 md:max-w-[500px] leading-loose opacity-65">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.

@@ -14,7 +14,7 @@ const About = () => {
             alt=""
           />
 
-          <p className="relative self-start">
+          <p className="relative self-start leading-relaxed opacity-65">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             accusamus iste tenetur, doloribus facere nam placeat! Error nihil
             nostrum quidem ipsa tempora praesentium, harum ut blanditiis itaque

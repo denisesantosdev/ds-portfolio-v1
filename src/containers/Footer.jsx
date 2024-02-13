@@ -3,7 +3,7 @@ import {Logo} from "../components/components-index"
 const Footer = () => {
   return (
     <footer className="footer footer-center p-10">
-      <aside>
+      <aside className="opacity-65">
         <Logo/>
         <p className="font-bold">
           Denise Santos <br />

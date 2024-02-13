@@ -5,10 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      heading: [ 'Radwave', 'sans-serif'],
+    },
     extend: {},
   },
   daisyui: {
-    themes: ["synthwave"],
+    themes: ["night"],
   },
   plugins: [require('daisyui')],
 }

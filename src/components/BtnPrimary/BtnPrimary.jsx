@@ -4,7 +4,7 @@ const BtnPrimary = (props) => {
   return (
     <a
       href={props.url}
-      className="btn btn-primary">
+      className="btn btn-primary btn-outline text-lg">
       {props.text}
       {props.icon}
     </a>
