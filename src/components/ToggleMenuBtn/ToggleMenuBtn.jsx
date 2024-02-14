@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaBars, FaXmark } from "react-icons/fa6";
+import icons from "../../data/icons"
 
 const ToggleMenuBtn = (props) => {
   return (
@@ -10,8 +10,8 @@ const ToggleMenuBtn = (props) => {
         onChange={() => props.setIsMenuHidden((prev) => !prev)}
       />
 
-      <FaBars className="swap-off fill-current text-2xl" />
-      <FaXmark className="swap-on fill-current text-2xl" />
+      <icons.menu size={40} className="swap-off fill-current text-2xl" />
+      <icons.close size={40} className="swap-on fill-current text-2xl" />
     </label>
   );
 };

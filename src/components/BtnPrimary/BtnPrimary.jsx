@@ -5,8 +5,8 @@ const BtnPrimary = (props) => {
     <a
       href={props.url}
       className="btn btn-primary btn-outline text-lg">
-      {props.text}
       {props.icon}
+      {props.text}
     </a>
   );
 };

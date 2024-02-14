@@ -1,17 +1,17 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "../../data/icons.jsx";
+import  icons  from "../../data/icons.jsx";
 
 const SocialMediaLinks = () => {
   const socialMediaLinks = [
     {
     linkName: 'Github',
     link: 'https://github.com/denisesantosdev',
-    linkIcon: <FaGithub/>
+    linkIcon: <icons.github size={30}/>
   },
     {
     linkName: 'Linkedin',
     link: 'https://www.linkedin.com/in/denisesantosdev/',
-    linkIcon: <FaLinkedin/>
+    linkIcon: <icons.linkedin size={30}/>
   },
 
 ];

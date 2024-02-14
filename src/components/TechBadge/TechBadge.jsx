@@ -1,6 +1,7 @@
 import React from "react";
 
 const TechBadge = (props) => {
+  
   return (
     <li
       className="tooltip tooltip-info"

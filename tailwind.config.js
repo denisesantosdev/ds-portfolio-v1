@@ -11,7 +11,7 @@ export default {
     extend: {},
   },
   daisyui: {
-    themes: ["night"],
+    themes: ["synthwave"],
   },
   plugins: [require('daisyui')],
 }

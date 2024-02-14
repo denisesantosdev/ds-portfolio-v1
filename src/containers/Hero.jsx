@@ -1,5 +1,6 @@
 import React from "react";
 import { BtnPrimary, BtnSecondary } from "../components/components-index";
+import  icons  from "../data/icons";
 
 const Hero = () => {
   return (
@@ -24,8 +25,14 @@ const Hero = () => {
             a id nisi.
           </p>
           <div className="flex gap-5">
-            <BtnPrimary text="Baixe meu CV!" />
-            <BtnSecondary text="Veja meus projetos" />
+            <BtnPrimary
+              text="Baixe meu CV!"
+              icon={<icons.download />}
+            />
+            <BtnSecondary
+              text="Veja meus projetos"
+              icon={<icons.arrowRight />}
+            />
           </div>
         </div>
       </div>
