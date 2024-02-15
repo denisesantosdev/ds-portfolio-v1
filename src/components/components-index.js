@@ -7,3 +7,4 @@ export { default as BtnSecondary } from "./BtnSecondary/BtnSecondary";
 export { default as BtnPrimary } from "./BtnPrimary/BtnPrimary";
 export { default as TechBadge } from "./TechBadge/TechBadge";
 export { default as Logo } from "./Logo/Logo";
+export { default as FeaturedProjectCard } from "./FeaturedProjectCard/FeaturedProjectCard";
