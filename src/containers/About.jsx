@@ -1,11 +1,13 @@
 import React from "react";
 import {SectionTitle} from '../components/components-index.js'
 
+import {pageSectionsNames} from "../data/pageSectionsNames"
+
 const About = () => {
   return (
-    <section id="sobre">
+    <section id={pageSectionsNames[0]}>
       <div className="">
-        <SectionTitle text="Sobre Mim"/>
+        <SectionTitle text={pageSectionsNames[0]}/>
         
         <div className="flex flex-col-reverse md:flex-row gap-20">
           <img

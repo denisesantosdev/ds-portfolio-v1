@@ -11,7 +11,7 @@ const Header = () => {
 
       <ToggleMenuBtn setIsMenuHidden={setIsMenuHidden}/>
 
-      <Menu isMenuHidden={isMenuHidden}/>
+      <Menu isMenuHidden={isMenuHidden} setIsMenuHidden={setIsMenuHidden}/>
     </header>
   );
 };

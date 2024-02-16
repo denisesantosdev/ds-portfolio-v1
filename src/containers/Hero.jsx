@@ -32,6 +32,7 @@ const Hero = () => {
             <BtnSecondary
               text="Veja meus projetos"
               icon={<icons.arrowRight />}
+              url='#projetos'
             />
           </div>
         </div>

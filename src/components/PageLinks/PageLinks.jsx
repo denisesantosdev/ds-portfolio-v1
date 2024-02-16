@@ -1,11 +1,11 @@
 import React from "react";
 
-const PageLinks = () => {
-  const links = ["Sobre mim", "Projetos", "Habilidades", "Contato"];
+import { pageSectionsNames } from "../../data/pageSectionsNames";
 
+const PageLinks = () => {
   return (
     <ul>
-      {links.map((link) => {
+      {pageSectionsNames.map((link) => {
         return (
           <li
             className="md:inline-block m-9 md:m-2 hover:text-primary"

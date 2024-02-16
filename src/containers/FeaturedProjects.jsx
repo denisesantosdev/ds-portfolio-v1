@@ -12,11 +12,14 @@ import icons from "../data/icons";
 
 import { FeaturedProjectsData } from "../data/featuredProjectsData";
 
+import {pageSectionsNames} from "../data/pageSectionsNames"
+
+
 const FeaturedProjects = () => {
   return (
-    <section id="projetos">
+    <section id={pageSectionsNames[1]}>
       <SectionTitle
-        text="Projetos"
+        text={pageSectionsNames[1]}
         textAlign="text-right"
       />
 

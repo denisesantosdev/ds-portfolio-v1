@@ -1,12 +1,15 @@
 import React from "react";
 import { SectionTitle, SocialMediaLinks } from "../components/components-index";
 
+import {pageSectionsNames} from "../data/pageSectionsNames"
+
+
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id={pageSectionsNames[3]}>
       <div className="mb-12">
         <SectionTitle
-          text="Contato"
+          text={pageSectionsNames[3]}
           textAlign="text-center"
           subtitleText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, vel."
         />
