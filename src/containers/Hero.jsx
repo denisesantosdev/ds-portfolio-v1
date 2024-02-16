@@ -2,6 +2,8 @@ import React from "react";
 import { BtnPrimary, BtnSecondary } from "../components/components-index";
 import  icons  from "../data/icons";
 
+import {pageSectionsNames} from "../data/pageSectionsNames"
+
 const Hero = () => {
   return (
     <section className="hero min-h-[70vh] bg-base-100">
@@ -32,7 +34,7 @@ const Hero = () => {
             <BtnSecondary
               text="Veja meus projetos"
               icon={<icons.arrowRight />}
-              url='#projetos'
+              url={`#${pageSectionsNames[1]}`}
             />
           </div>
         </div>

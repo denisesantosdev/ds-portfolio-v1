@@ -9,7 +9,7 @@ const Header = () => {
     <header className="p-5 bg-base-100 flex justify-between">
       <Logo/>
 
-      <ToggleMenuBtn setIsMenuHidden={setIsMenuHidden}/>
+      <ToggleMenuBtn isMenuHidden={isMenuHidden} setIsMenuHidden={setIsMenuHidden}/>
 
       <Menu isMenuHidden={isMenuHidden} setIsMenuHidden={setIsMenuHidden}/>
     </header>

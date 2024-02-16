@@ -2,7 +2,7 @@ import React from "react";
 
 import { pageSectionsNames } from "../../data/pageSectionsNames";
 
-const PageLinks = () => {
+const PageLinks = ({ setIsMenuHidden }) => {
   return (
     <ul>
       {pageSectionsNames.map((link) => {
@@ -10,7 +10,11 @@ const PageLinks = () => {
           <li
             className="md:inline-block m-9 md:m-2 hover:text-primary"
             key={link}>
-            <a href={`#${link}`}>{link}</a>
+            <a
+              href={`#${link}`}
+              onClick={() => setIsMenuHidden(true)}>
+              {link}
+            </a>
           </li>
         );
       })}
