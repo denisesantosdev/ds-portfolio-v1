@@ -1,17 +1,23 @@
 import React from "react";
 import { BtnPrimary, BtnSecondary } from "../components/components-index";
-import  icons  from "../data/icons";
+import icons from "../data/icons";
 
-import {pageSectionsNames} from "../data/pageSectionsNames"
+import { pageSectionsNames } from "../data/pageSectionsNames";
+import laptopAnimation from "../assets/lottie-animations/laptop-opening.json";
+import Lottie from "lottie-react";
 
 const Hero = () => {
   return (
     <section className="hero min-h-[70vh] bg-base-100">
       <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-16 p-0">
-        <img
+        {/* <img
           src="https://placehold.it/300x300"
           alt=""
-          className="max-w-sm rounded-full shadow-2xl"
+          className="max-w-sm rounded-full "
+        /> */}
+        <Lottie
+          autoplay
+          animationData={laptopAnimation}
         />
         <div>
           <p className="text-primary mb-2">Olá mundo! Meu nome é</p>

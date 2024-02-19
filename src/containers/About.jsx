@@ -1,20 +1,23 @@
 import React from "react";
-import {SectionTitle} from '../components/components-index.js'
+import { SectionTitle, SynthwaveSun } from "../components/components-index.js";
 
-import {pageSectionsNames} from "../data/pageSectionsNames"
+import { pageSectionsNames } from "../data/pageSectionsNames";
 
 const About = () => {
   return (
     <section id={pageSectionsNames[0]}>
       <div className="">
-        <SectionTitle text={pageSectionsNames[0]}/>
-        
+        <SectionTitle text={pageSectionsNames[0]} />
+
         <div className="flex flex-col-reverse md:flex-row gap-20">
-          <img
-            className="max-w-[300px] self-center"
-            src="https://placehold.it/300"
-            alt=""
-          />
+          <div className="relative  self-center">
+            <img
+              className="max-w-[300px] rounded-full relative z-20 shadow-2xl"
+              src="https://placehold.it/300"
+              alt=""
+            />
+            <SynthwaveSun/>
+          </div>
 
           <p className="relative self-start leading-relaxed opacity-65">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente

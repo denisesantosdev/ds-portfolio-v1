@@ -1,8 +1,8 @@
 import React from "react";
 import { SectionTitle, SocialMediaLinks } from "../components/components-index";
 
-import {pageSectionsNames} from "../data/pageSectionsNames"
-
+import { pageSectionsNames } from "../data/pageSectionsNames";
+import Lottie from "lottie-react";
 
 const Contact = () => {
   return (
@@ -17,12 +17,34 @@ const Contact = () => {
       </div>
 
       <div className="grid md:grid-cols-2">
-        <img
+        {/* <img
           className="justify-self-center mt-20 hidden md:block"
           src="https://placehold.it/200"
           alt=""
-        />
-
+        /> */}
+        {/* <Lottie
+          animationData={pcLines}
+          interactivity={{
+            mode: "scroll",
+            actions: [
+              {
+                visibility: [0, 0.2],
+                type: "stop",
+                frames: [0],
+              },
+              {
+                visibility: [0.2, 0.45],
+                type: "seek",
+                frames: [0, 45],
+              },
+              {
+                visibility: [0.45, 1.0],
+                type: "seek",
+                frames: [45, 240],
+              },
+            ],
+          }}
+        /> */}
         <form
           action=""
           className="grid gap-5">
