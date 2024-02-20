@@ -9,22 +9,24 @@ import Lottie from "lottie-react";
 const Hero = () => {
   return (
     <section className="hero min-h-[70vh] bg-base-100">
-      <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-16 p-0">
+      <div className="hero-content flex-col-reverse md:flex-row-reverse p-0 relative">
         {/* <img
           src="https://placehold.it/300x300"
           alt=""
           className="max-w-sm rounded-full "
         /> */}
-        <Lottie
-          autoplay
-          animationData={laptopAnimation}
-        />
-        <div>
+        <div className="w-[350px] md:absolute md:w-[450px] lg:w-[550px] xl:w-[750px] -right-[100px] top-[0px] -z-10 md:opacity-75 lg:opacity-100">
+          <Lottie
+            autoplay
+            animationData={laptopAnimation}
+          />
+        </div>
+        <div className="">
           <p className="text-primary mb-2">Olá mundo! Meu nome é</p>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 font-heading opacity-95">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3 font-heading opacity-95">
             Denise Santos
           </h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading opacity-65">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading opacity-65">
             Desenvolvevora <nobr>front-end</nobr>
           </h2>
           <p className="py-9 md:max-w-[500px] leading-loose opacity-65">
