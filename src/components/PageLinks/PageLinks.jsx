@@ -8,12 +8,14 @@ const PageLinks = ({ setIsMenuHidden }) => {
       {pageSectionsNames.map((link) => {
         return (
           <li
-            className="md:inline-block m-9 md:m-2 hover:text-primary"
+            className="md:inline-block m-9 md:m-2 relative"
             key={link}>
             <a
+              className="opacity-80 hover:text-primary hover:opacity-100 focus:text-primary focus:opacity-100 transition-all ease-out"
               href={`#${link}`}
               onClick={() => setIsMenuHidden(true)}>
-              {link}
+                <span className="opacity-30">// </span>
+                {link}
             </a>
           </li>
         );

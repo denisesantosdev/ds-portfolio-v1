@@ -25,10 +25,9 @@ body {
 .text-decoration:before {
   position: absolute;
   content: '/*';
-  inset: 0;
   top: -50px;
   left: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   opacity: .40;
   color: inherit;
 }
@@ -38,7 +37,7 @@ body {
   content: '*/';
   left: 10px;
   bottom: -50px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   opacity: .40;
   color: inherit;
 }
@@ -46,3 +45,26 @@ body {
 .lock-scroll {
   overflow: hidden;
 }
+
+.link-decoration {
+  transition: all .5s ease;
+}
+
+.link-decoration:before {
+  position: absolute;
+  inset: 0;
+  left: 15px;
+  top: 3px;
+  height: 70%;
+  content: '';
+  background-color: pink;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .5s ease;
+  opacity: 0;
+}
+
+.link-decoration:hover:before {
+  transform: scaleX(1) skew(-25deg);
+  opacity: 1;
+} 

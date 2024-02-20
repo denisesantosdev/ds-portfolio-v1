@@ -49,8 +49,8 @@ const FeaturedProjectCard = (props) => {
           alt=""
         />
         <div
-          className={`grid gap-7 md:absolute top-16 md:w-[50%] ${elementsPosition.infoDivContent} ${elementsPosition.infoDiv}`}>
-          <p className="md:bg-neutral md:p-5 md:rounded-md md:bg-opacity-80 leading-relaxed">
+          className={`grid gap-12 md:absolute top-16 md:w-[50%] ${elementsPosition.infoDivContent} ${elementsPosition.infoDiv}`}>
+          <p className="md:bg-neutral md:p-5 md:rounded-md md:bg-opacity-80 leading-relaxed text-opacity-65">
             {props.project.description}
           </p>
           <ul
@@ -59,7 +59,7 @@ const FeaturedProjectCard = (props) => {
             {props.project.techUsed.map((item, index) => {
               return (
                 <li
-                  className="badge badge-neutral p-3 text-secondary md:bg-opacity-80"
+                  className="badge badge-neutral p-3 text-secondary bg-neutral md:bg-opacity-80"
                   key={index}>
                   {item.toUpperCase()}
                 </li>

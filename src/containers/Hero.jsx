@@ -21,7 +21,7 @@ const Hero = () => {
         />
         <div>
           <p className="text-primary mb-2">Olá mundo! Meu nome é</p>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 font-heading">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-3 font-heading opacity-95">
             Denise Santos
           </h1>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading opacity-65">

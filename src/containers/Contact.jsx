@@ -2,6 +2,8 @@ import React from "react";
 import { SectionTitle, SocialMediaLinks } from "../components/components-index";
 
 import { pageSectionsNames } from "../data/pageSectionsNames";
+
+import icons from "../data/icons"
 import Lottie from "lottie-react";
 
 const Contact = () => {
@@ -16,38 +18,10 @@ const Contact = () => {
         <SocialMediaLinks />
       </div>
 
-      <div className="grid md:grid-cols-2">
-        {/* <img
-          className="justify-self-center mt-20 hidden md:block"
-          src="https://placehold.it/200"
-          alt=""
-        /> */}
-        {/* <Lottie
-          animationData={pcLines}
-          interactivity={{
-            mode: "scroll",
-            actions: [
-              {
-                visibility: [0, 0.2],
-                type: "stop",
-                frames: [0],
-              },
-              {
-                visibility: [0.2, 0.45],
-                type: "seek",
-                frames: [0, 45],
-              },
-              {
-                visibility: [0.45, 1.0],
-                type: "seek",
-                frames: [45, 240],
-              },
-            ],
-          }}
-        /> */}
+      <div>
         <form
           action=""
-          className="grid gap-5">
+          className="grid max-w-[500px] m-auto gap-5 ">
           <div>
             <label
               htmlFor=""
@@ -87,14 +61,12 @@ const Contact = () => {
               id=""
               cols="30"
               rows="10"
-              placeholder="Sua mensagem"
+              placeholder="Diga Olá!"
               className="textarea textarea-secondary resize-none w-full text-sm"></textarea>
           </div>
-          <input
-            type="button"
-            value="Enviar"
-            className="btn btn-primary btn-outline justify-self-center"
-          />
+          <button className="btn btn-primary h-fit min-h-fit justify-self-center px-8 py-4">
+            <icons.send size={35}/>
+          </button>
         </form>
       </div>
     </section>

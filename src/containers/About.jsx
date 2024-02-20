@@ -19,7 +19,7 @@ const About = () => {
             <SynthwaveSun/>
           </div>
 
-          <p className="relative self-start leading-relaxed opacity-65">
+          <p className="relative self-start leading-relaxed opacity-65 text-decoration">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             accusamus iste tenetur, doloribus facere nam placeat! Error nihil
             nostrum quidem ipsa tempora praesentium, harum ut blanditiis itaque
