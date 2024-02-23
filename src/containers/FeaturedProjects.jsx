@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   SectionTitle,
@@ -11,9 +11,12 @@ import {
 import icons from "../data/icons";
 
 import { FeaturedProjectsData } from "../data/featuredProjectsData";
+import {
+  FadeInFromLeftAnim,
+  FadeInFromRightAnim,
+} from "../animations/anim-index";
 
-import {pageSectionsNames} from "../data/pageSectionsNames"
-
+import { pageSectionsNames } from "../data/pageSectionsNames";
 
 const FeaturedProjects = () => {
   return (
@@ -25,13 +28,25 @@ const FeaturedProjects = () => {
 
       <div className="grid gap-24">
         {FeaturedProjectsData.map((project, index) => {
-          return (
-            <FeaturedProjectCard
-              key={index}
-              project={project}
-              index={index}
-            />
-          );
+          if (index % 2 == 0) {
+            return (
+              <FadeInFromLeftAnim key={index}>
+                <FeaturedProjectCard
+                  project={project}
+                  index={index}
+                />
+              </FadeInFromLeftAnim>
+            );
+          } else {
+            return (
+              <FadeInFromRightAnim key={index}>
+                <FeaturedProjectCard
+                  project={project}
+                  index={index}
+                />
+              </FadeInFromRightAnim>
+            );
+          }
         })}
       </div>
     </section>

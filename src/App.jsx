@@ -14,10 +14,10 @@ import {
 function App() {
   return (
     <>
-      <div className="mb-16 max-w-screen-xl m-auto">
+      <div className="mb-10 max-w-screen-xl m-auto">
         <Header />
       </div>
-      <div className="mb-10 md:mb-40 max-w-screen-xl m-auto px-14">
+      <div className="mb-10 md:mb-72 max-w-screen-xl m-auto px-14">
         <Hero />
       </div>
       <div className="px-14 grid gap-40 mb-32 max-w-screen-lg m-auto">

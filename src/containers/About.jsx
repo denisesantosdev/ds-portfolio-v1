@@ -2,11 +2,12 @@ import React from "react";
 import { SectionTitle, SynthwaveSun } from "../components/components-index.js";
 
 import { pageSectionsNames } from "../data/pageSectionsNames";
+import {FadeInFromDownAnim} from '../animations/anim-index.js'
 
 const About = () => {
   return (
     <section id={pageSectionsNames[0]}>
-      <div className="">
+      <FadeInFromDownAnim delay={0.2}>
         <SectionTitle text={pageSectionsNames[0]} />
 
         <div className="flex flex-col-reverse md:flex-row gap-20">
@@ -28,7 +29,7 @@ const About = () => {
             incidunt facere explicabo harum reprehenderit. Odio.
           </p>
         </div>
-      </div>
+      </FadeInFromDownAnim>
     </section>
   );
 };
