@@ -7,7 +7,22 @@ import { FadeInFromDownAnim } from "../animations/anim-index";
 
 import icons from "../data/icons";
 
+import { useForm } from "@formspree/react";
+
 const Contact = () => {
+  const [state, handleSubmit, reset] = useForm("meqylnqb");
+
+  console.log(state);
+
+  if (state.succeeded) {
+    return <p>Obrigado! Em breve entrarei em contato!</p>;
+  }
+  
+  if(state.errors !== null) {
+    return <p>Opa. Algo deu errado 🤔</p>;
+    
+  }
+
   return (
     <section id={pageSectionsNames[3]}>
       <FadeInFromDownAnim delay={0.2}>
@@ -21,7 +36,49 @@ const Contact = () => {
         </div>
 
         <div>
-          <form
+          <form onSubmit={handleSubmit} className="grid max-w-[500px] m-auto gap-5 ">
+            <div>
+              <label htmlFor="nome">Seu nome</label>
+              <input
+                id="nome"
+                type="text"
+                name="nome"
+                className="input input-secondary w-full text-sm"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="email">Seu email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                className="input input-secondary w-full text-sm"
+                required
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="mensagem">
+                Sua mensagem
+              </label>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+                placeholder="Diga Olá!"
+                className="textarea textarea-secondary resize-none w-full text-sm" required></textarea>
+            </div>
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="btn btn-primary h-fit min-h-fit justify-self-center px-8 py-4">
+              <icons.send size={35} />
+            </button>
+          </form>
+
+          {/* <form
             action=""
             className="grid max-w-[500px] m-auto gap-5 ">
             <div>
@@ -69,7 +126,7 @@ const Contact = () => {
             <button className="btn btn-primary h-fit min-h-fit justify-self-center px-8 py-4">
               <icons.send size={35} />
             </button>
-          </form>
+          </form> */}
         </div>
       </FadeInFromDownAnim>
     </section>
