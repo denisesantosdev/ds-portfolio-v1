@@ -9,3 +9,4 @@ export { default as TechBadge } from "./TechBadge/TechBadge";
 export { default as Logo } from "./Logo/Logo";
 export { default as FeaturedProjectCard } from "./FeaturedProjectCard/FeaturedProjectCard";
 export { default as SynthwaveSun } from "./SynthwaveSun/SynthwaveSun";
+export { default as ContactForm } from "./ContactForm/ContactForm";
